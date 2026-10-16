@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Descarga miniaturas de videos de YouTube sin anuncios, popups ni complicaciones." />
+  <meta name="theme-color" content="#0b0d12" />
+  <title>ThumbGrab — YouTube Thumbnail Downloader</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <main class="shell">
+    <header class="topbar">
+      <a href="#" class="brand" aria-label="ThumbGrab inicio">
+        <span class="brand-mark">▣</span>
+        <span>ThumbGrab</span>
+      </a>
+      <span class="badge">Sin anuncios</span>
+    </header>
+
+    <section class="hero">
+      <div class="eyebrow">YOUTUBE THUMBNAIL DOWNLOADER</div>
+      <h1>Descarga la miniatura.<br><span>Sin rodeos.</span></h1>
+      <p class="lead">Pega la URL de un video, Short o enlace youtu.be. Te mostramos las miniaturas disponibles al instante.</p>
+
+      <form id="searchForm" class="search">
+        <input id="urlInput" type="url" inputmode="url" placeholder="https://www.youtube.com/watch?v=..." aria-label="URL de YouTube" autocomplete="off" spellcheck="false" />
+        <button type="submit">Buscar</button>
+      </form>
+
+      <div class="examples">
+        <span>Compatible con:</span>
+        <span class="chip">youtube.com/watch</span>
+        <span class="chip">youtu.be</span>
+        <span class="chip">YouTube Shorts</span>
+      </div>
+
+      <div id="errorBox" class="error hidden" role="alert"></div>
+    </section>
+
+    <section id="resultsSection" class="results hidden" aria-live="polite">
+      <div class="section-head">
+        <div>
+          <div class="eyebrow">RESULTADOS</div>
+          <h2>Miniaturas disponibles</h2>
+        </div>
+        <button id="copyIdButton" class="ghost-button" type="button">Copiar ID</button>
+      </div>
+
+      <div id="thumbnailGrid" class="thumb-grid"></div>
+    </section>
+
+    <section class="info-card">
+      <div class="info-icon">✦</div>
+      <div>
+        <h3>Hecha para ser simple</h3>
+        <p>Esta página fue <strong>vibecodeada</strong> por diversión. No tiene anuncios, popups, cuentas, cookies raras ni botones falsos. Solo existe porque me molestan las páginas de descarga llenas de anuncios XD.</p>
+      </div>
+    </section>
+
+    <footer>
+      <span>ThumbGrab</span>
+      <span>No afiliado con YouTube. Usa las miniaturas respetando los derechos de sus autores.</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
