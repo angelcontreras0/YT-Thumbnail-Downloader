@@ -2,6 +2,10 @@
 
 Una herramienta simple para obtener y descargar miniaturas de videos de YouTube pegando una URL.
 
+## Probar la web
+
+👉 https://angelcontreras0.github.io/YT-Thumbnail-Downloader/
+
 ## Funciones
 
 - Soporta URLs normales de YouTube.
